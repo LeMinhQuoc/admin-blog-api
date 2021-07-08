@@ -1,0 +1,28 @@
+<?php //Kunstmaan%255CDashboardBundle%255CEntity%255CAnalyticsSegment%2524overviews
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\OneToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\OneToMany')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'mappedBy' => [
+                'segment',
+            ],
+            'targetEntity' => [
+                'AnalyticsOverview',
+            ],
+            'cascade' => [
+                [
+                    'persist',
+                    'remove',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];

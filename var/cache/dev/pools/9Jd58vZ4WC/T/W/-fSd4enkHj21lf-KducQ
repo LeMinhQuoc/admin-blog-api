@@ -1,0 +1,33 @@
+<?php //Kunstmaan%255CTranslatorBundle%255CController%255CTranslatorController%2523deleteAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/{id}/delete',
+            ],
+            'name' => [
+                'KunstmaanTranslatorBundle_settings_translations_delete',
+            ],
+            'requirements' => [
+                [
+                    'id' => '\\d+',
+                ],
+            ],
+            'methods' => [
+                [
+                    'GET',
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];

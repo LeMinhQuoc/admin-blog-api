@@ -1,0 +1,24 @@
+<?php //Kunstmaan%255CDashboardBundle%255CEntity%255CAnalyticsGoal
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'kuma_analytics_goal',
+            ],
+            'repositoryClass' => [
+                1 => 'Kunstmaan\\DashboardBundle\\Repository\\AnalyticsGoalRepository',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

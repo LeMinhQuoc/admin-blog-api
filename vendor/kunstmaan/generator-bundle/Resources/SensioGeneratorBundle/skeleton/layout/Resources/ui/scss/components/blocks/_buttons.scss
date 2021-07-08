@@ -1,0 +1,128 @@
+/* ==========================================================================
+   Blocks - Buttons
+   ========================================================================== */
+
+/* General
+   ========================================================================== */
+.btn {
+{% if demosite %}
+    @include box-shadow();
+{% endif %}
+    display: inline-block;
+    padding: .7em 1.5em;
+    margin: 0;
+
+    background: none;
+{% if demosite %}
+    background-color: $white;
+{% endif %}
+
+{% if demosite %}
+    border: 1px solid $hr-color;
+{% else %}
+    border: 1px solid $text-color;
+{% endif %}
+
+    -webkit-appearance: none;
+
+    color: $text-color;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+
+    transition: background .3s ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+{% if demosite %}
+        background-color: darken($white, 5%);
+{% endif %}
+
+        color: $text-color;
+        text-decoration: none;
+    }
+
+    &:active,
+    &:focus {
+        outline: 0;
+    }
+
+    &[disabled],
+    fieldset[disabled] & {
+        opacity: .65;
+
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}
+
+
+/* Types
+   ========================================================================== */
+// Primary
+.btn--primary {
+{% if demosite %}
+    background-color: $brand-primary;
+
+    border-color: $brand-primary;
+
+    color: $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: lighten($brand-primary, 5%);
+
+        color: $white;
+    }
+{% endif %}
+}
+
+// Secondary
+.btn--secondary {
+{% if demosite %}
+    background-color: $brand-primary--dark;
+
+    border-color: $brand-primary--dark;
+
+    color: $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: lighten($brand-primary--dark, 5%);
+
+        color: $white;
+    }
+{% endif %}
+}
+
+
+/**
+ * @section Buttons
+ * @sectionof Blocks
+ */
+
+/**
+ * @doc docs/buttons.md
+ * @section
+ * @sectionof Blocks.Buttons
+ */
+
+/**
+ * @doc docs/buttons-types.md
+ * @section
+ * @sectionof Blocks.Buttons
+ */
+
+/**
+ * @doc docs/buttons-sizes.md
+ * @section
+ * @sectionof Blocks.Buttons
+ */

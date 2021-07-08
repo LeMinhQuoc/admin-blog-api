@@ -1,0 +1,43 @@
+{
+    "name": "kunstmaan/media-bundle",
+    "type": "symfony-bundle",
+    "description": "To build your perfect website you probably need images, video's or maybe even a presentation too. The Kunstmaan Media Bundle handles all those media assets and centralizes them so you can find your content just the way you like it: fast and efficiently. No central asset management module is useful without some pretty advanced image editing functionality. To provide this we have integrated the Aviary image editing service right from the interface.",
+    "keywords": ["kunstmaan", "cms", "media"],
+    "homepage": "https://github.com/Kunstmaan/KunstmaanMediaBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kunstmaan Team",
+            "homepage": "http://www.kunstmaan.be/",
+            "email": "support@kunstmaan.be"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "gedmo/doctrine-extensions": "^2.4.34",
+        "stof/doctrine-extensions-bundle": "~1.1",
+        "liip/imagine-bundle": "^2.4",
+        "symfony/mime": "^4.4",
+        "imagine/imagine": "^1.1",
+        "knplabs/knp-gaufrette-bundle": "~0.1",
+        "kunstmaan/adminlist-bundle": "~5.2"
+    },
+    "require-dev": {
+        "matthiasnoback/symfony-config-test": "^4.0",
+        "matthiasnoback/symfony-dependency-injection-test": "^4.1",
+        "symfony/phpunit-bridge": "^5.1",
+        "phpunit/phpunit": "^8.5"
+    },
+    "suggest": {
+        "ext-imagick": "to support PDF preview images"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": { "Kunstmaan\\MediaBundle\\": "" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "5.8-dev"
+        }
+    }
+}

@@ -1,0 +1,3 @@
+<?php //Kunstmaan%255CAdminBundle%255CEntity%255CBaseUser%2523getGroupIds
+
+return [PHP_INT_MAX, []];

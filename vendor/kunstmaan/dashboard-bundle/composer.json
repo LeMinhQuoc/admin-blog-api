@@ -1,0 +1,35 @@
+{
+    "name": "kunstmaan/dashboard-bundle",
+    "type": "symfony-bundle",
+    "description": "The Kunstmaan Dashboard bundle adds a system to build advanced dashboards in the admin area of the CMS. Currently it features a large Google Analytics integration.",
+    "keywords": ["kunstmaan", "cms", "admin", "dashboard", "google analytics"],
+    "homepage": "https://github.com/Kunstmaan/KunstmaanDashboardBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kunstmaan Team",
+            "homepage": "http://www.kunstmaan.be/",
+            "email": "support@kunstmaan.be"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "kunstmaan/admin-bundle": "~5.2",
+        "kunstmaan/google-api-custom": "~1.0"
+    },
+    "require-dev": {
+        "matthiasnoback/symfony-config-test": "^4.0",
+        "matthiasnoback/symfony-dependency-injection-test": "^4.1",
+        "symfony/phpunit-bridge": "^5.1",
+        "phpunit/phpunit": "^8.5"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": { "Kunstmaan\\DashboardBundle\\": "" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "5.8-dev"
+        }
+    }
+}

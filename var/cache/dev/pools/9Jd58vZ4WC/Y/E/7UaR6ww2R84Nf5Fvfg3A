@@ -1,0 +1,24 @@
+<?php //Kunstmaan%255CNodeBundle%255CEntity%255CNode%2524nodeTranslations
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Validator\\Constraints\\Valid'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Valid')),
+        clone ($p['Doctrine\\ORM\\Mapping\\OneToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\OneToMany')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'mappedBy' => [
+                1 => 'node',
+            ],
+            'targetEntity' => [
+                1 => 'NodeTranslation',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

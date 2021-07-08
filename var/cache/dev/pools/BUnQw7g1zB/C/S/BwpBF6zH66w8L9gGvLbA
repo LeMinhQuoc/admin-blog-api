@@ -1,0 +1,60 @@
+<?php //Kunstmaan%255CNodeBundle%255CEntity%255CNode
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Index'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Index')),
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone ($p['Doctrine\\ORM\\Mapping\\HasLifecycleCallbacks'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\HasLifecycleCallbacks')),
+        clone ($p['Doctrine\\ORM\\Mapping\\ChangeTrackingPolicy'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ChangeTrackingPolicy')),
+        clone ($p['Gedmo\\Mapping\\Annotation\\Tree'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Gedmo\\Mapping\\Annotation\\Tree')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'repositoryClass' => [
+                'Kunstmaan\\NodeBundle\\Repository\\NodeRepository',
+            ],
+            'name' => [
+                1 => 'kuma_nodes',
+                'idx_node_internal_name',
+                'idx_node_ref_entity_name',
+                'idx_node_tree',
+            ],
+            'indexes' => [
+                1 => [
+                    $o[2],
+                    $o[3],
+                    $o[4],
+                ],
+            ],
+            'columns' => [
+                2 => [
+                    'internal_name',
+                ],
+                [
+                    'ref_entity_name',
+                ],
+                [
+                    'deleted',
+                    'hidden_from_nav',
+                    'lft',
+                    'rgt',
+                ],
+            ],
+            'value' => [
+                6 => 'DEFERRED_EXPLICIT',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[5],
+        $o[6],
+        $o[7],
+    ],
+    []
+); }];

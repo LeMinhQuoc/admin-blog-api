@@ -1,0 +1,55 @@
+---
+form:
+  back: 'Zurück'
+dashboard:
+  ga:
+    tab:
+      today: Heute
+      yesterday: Gestern
+      last_7_days: Letzte 7 Tage
+      last_30_days: Letzte 30 Tage
+      last_12_months: Letzte 12 Monate
+      year_to_date: Jahr bis heute
+    chart:
+      users: Besucher
+      pct_new_sessions: "% Neue Sitzungen"
+      sessions: Sitzungen
+      pageviews: Seitenaufrufe
+      avg_pages_p_session: Seiten / Sitzung
+      avg_session_duration: Durchschn. Sitzungsdauer
+    setup:
+      goals:
+        disable: Ziele deaktivieren
+      title: Google Analytics dashboard widget einrichten
+      content: "Um mehr Informationen zur Einrichtung des Google Analytics Widgets zu erhalten, besuchen Sie"
+      docs_url: "https://kunstmaanbundlescms.readthedocs.io/en/stable/cookbook/google-analytics-dashboard/"
+      docs: die Dokumentation
+      redirect: "Dies ist die Umleitungs-URI:"
+      refresh: "Aktualisieren Sie diese Seite sobald Sie mit der Einrichtung fertig sind."
+      connect: Google-Account verbinden
+      confirm: Jetzt verbinden
+      profile:
+        title: Profil auswählen
+        select: Profil auswählen...
+        content: Profil für die ausgewählte Website auswählen
+      property:
+        title: Websites auswählen, die überwacht werden soll
+        select: Website auswählen...
+        content: Domain auswählen, die in Ihrem Google Analytics Account hinterlegt ist.
+      account:
+        title: Benutzerkonto auswählen
+        select: Benutzerkonto auswählen...
+      link: Dashboard einrichten
+      back: Zum Dashboard
+      segment:
+        add: Segment hinzufügen
+        info: 'Um eigene Segmente zu erstellen, nutzen Sie die Segment IDs (und kombineren diese) oder schreiben Sie eigene Queries. Google stellt voreingestellte Segment IDs zur Verfügung (unten aufgelistet). Sie können eigene Segmente mit dem Google Segment Builder-Tool in Google Analytics erstellen. Zum Öffnen der Dokumentation dazu klicken Sie'
+        here: hier
+        own: Eigene Segmente
+        builtin: Integrierte Segmente
+      segments: Segment einrichten
+      accounts: Konto einrichten
+    reset:
+      property: Google Analytics-Link ändern
+    last_update: "Letzte Aktualisierung:"
+    unavailable: Keine Daten verfügbar, bitte Aktualisieren Button klicken.

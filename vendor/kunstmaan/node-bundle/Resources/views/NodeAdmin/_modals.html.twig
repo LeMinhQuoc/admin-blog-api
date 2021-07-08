@@ -1,0 +1,22 @@
+<!-- MODALS -->
+
+<!-- Modal - Versions -->
+{% include '@KunstmaanNode/NodeAdmin/Modals/_versions.html.twig' %}
+<!-- Modal - Add subpage -->
+{% include '@KunstmaanNode/NodeAdmin/Modals/_add_subpage.html.twig' %}
+<!-- Modal - Delete page -->
+{% include '@KunstmaanNode/NodeAdmin/Modals/_delete.html.twig' %}
+<!-- Modal - Duplicate page -->
+{% include '@KunstmaanNode/NodeAdmin/Modals/_duplicate.html.twig' %}
+{% if showDuplicateWithChildren %}
+    <!-- Modal - Duplicate with children page -->
+    {% include '@KunstmaanNode/NodeAdmin/Modals/_duplicate_with_children.html.twig' %}
+{% endif %}
+<!-- Modal - ReCopy content from other language -->
+{% include '@KunstmaanNode/NodeAdmin/Modals/_recopy.html.twig' %}
+
+{# Check if Page HasPageTemplateInterface method #}
+{% if page.pageTemplates is defined %}
+<!-- Modal - Export page template -->
+{% include '@KunstmaanNode/NodeAdmin/Modals/_export_pagetemplate.html.twig' %}
+{% endif %}

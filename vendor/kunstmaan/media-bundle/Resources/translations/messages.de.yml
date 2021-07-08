@@ -1,0 +1,173 @@
+---
+media:
+  aviary:
+    title: Aviary
+    nothing: Hier gibt es nichts zu sehen.
+  media:
+    no: Noch keine Dateien in diesem Verzeichnis.
+    dnd:
+      tip: "Tipp:"
+      tiptext: wussten Sie, dass sie mehrere Dateien hier ablegen können?
+      alert:
+        title: Eingehend!
+        text: Dateien hier ablegen, um sie direkt in diesen Ordner hochzuladen.
+    bulkupload:
+      addto: Upload in das Verzeichnis "%folder%"
+    contenttab:
+      title: Inhalt
+    propertiestab:
+      title: Eigenschaften
+    title: Medien
+    add:
+      action: Medien hinzufügen
+    edit:
+      action: Bearbeiten
+    download:
+      action: Herunterladen
+    mediainfo:
+      name: Name
+      contenttype: Medien-Typ
+      createdat: Hinzugefügt
+      updatedat: Aktualisiert
+      downloadlink: Download Link
+    addto: Datei-Upload in das Verzeichnis "%folder%"
+    deletesure: Soll diese Datei wirklich gelöscht werden?
+    new: Datei-Upload in das Verzeichnis "%folder%"
+  folder:
+    addsub:
+      action: Unterverzeichnis Erstellen
+      action_short: Erstellen
+      modal:
+        title: Unterverzeichnis Erstellen
+        save: Erstellen
+      form:
+        name: Name
+        rel: Beziehung
+        parent: Übergeordnet
+        internal_name: Interner Name
+      success:
+        text: Der Ordner "%folder%" wurde erstellt!
+    empty:
+      action: Leerer Order
+      action_short: Leer
+      modal:
+        title: Leerer Order
+        text: Sind Sie sicher, dass Sie den Inhalt des Ordners "%folder%" löschen wollen?
+        checkbox: Unterordner auch löschen
+        save: Leer
+      success:
+        text: Der Ordner "%folder%" wurde gelöscht!
+    bulk_move:
+      action: Alle Medien verschieben
+      action_short: Alle verschieben
+      modal:
+        title: Alle Medien verschieben
+        text: Order auswählen, in denen die ausgewählten Medien verschoben werden sollen.
+        save: "Verschieben"
+        form:
+          name: Übergeordneter Order
+      success:
+        text: Medien erfolgreich verschoben!
+    sub:
+      no: Noch keine Unterverzeichnisse vorhanden.
+    delete:
+      action: Verzeichnis Löschen
+      action_short: Löschen
+      modal:
+        title: Verzeichnis Löschen
+        text: Soll das Verzeichnis "%folder%" wirklich gelöscht werden?
+      failure:
+        text: Ordner %folder% kann nicht gelöscht werden!
+      success:
+        text: Ordner "%folder%" wurde gelöscht!
+    save: Speichern
+    contenttab:
+      title: Inhalt
+    propertiestab:
+      title: Eigenschaften
+    sortby: Sortieren nach
+    show:
+      success:
+        text: Der Ordner %folder% wurde aktualisiert!
+  bulkupload:
+    upload: Hochladen
+    bulkupload: Massen-Upload
+    select_files: Dateien Auswählen
+    upload_more: Upload weiterer Dateien
+    back_to_folder: Zurück zum Verzeichnis
+    upload_finished: Upload abgeschlossen.
+    not_available: Der Massen-Upload ist nicht verfügbar. Ihr Browser unterstützt kein Flash, Silverlight oder HTML5.
+  slide:
+    add: Folie Hinzufügen
+    modal:
+      title: Folie Hinzufügen
+      save: Hinzufügen
+  video:
+    add: Video Hinzufügen
+    modal:
+      title: Video Hinzufügen
+      save: Hinzufügen
+  audio:
+    add: Audio Hinzufügen
+    modal:
+      title: Audio Hinzufügen
+      save: Hinzufügen
+  file:
+    add: Datei Hinzufügen
+    modal:
+      title: Datei Hinzufügen
+      save: Hinzufügen
+  widget:
+    choose: Auswählen
+    delete: Löschen
+    media_chooser: Medien-Auswahl
+    icon_chooser: Icon-Auswahl
+  adminlist:
+    configurator:
+      name: Name
+      type: Typ
+      date: Datum
+      filesize: Dateigröße
+      filter:
+        name: Name
+        type: Typ
+        updated_at: Datum
+        filesize: Dateigröße (in Byte)
+  form:
+    remote:
+      name:
+        label: Name
+      code:
+        label: Code
+      type:
+        label: Typ
+      copyright:
+        label: Copyright
+      description:
+        label: Beschreibung
+    bulk_upload:
+      files:
+        label: Dateien
+    file:
+      name:
+        label: Name
+      file:
+        label: Datei
+      copyright:
+        label: Copyright
+      description:
+        label: Beschreibung
+      originalFilename:
+        label: Original-Dateiname
+    remote_audio:
+      type:
+        label: Typ
+    remote_slide:
+      type:
+        label: Typ
+    remote_video:
+      type:
+        label: Typ
+  flash:
+    created: Datei %medianame% wurde erstellt!
+    not_created: Datei nicht erstellt! %mediaerrors%

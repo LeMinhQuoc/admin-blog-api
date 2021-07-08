@@ -1,0 +1,36 @@
+---
+kuma_menu:
+  menus:
+    title: Menu's
+  menu:
+    adminlist:
+      field:
+        name: Naam
+      filter:
+        name: Naam
+      action:
+        manage: Beheer
+  menu_item:
+    adminlist:
+      breadcrumb:
+        modules: Modules
+        menu: Menu's
+        menu_items: Menu items
+      title: Menu items voor %name% en taal %locale%
+      online: (Online)
+      offline: (Offline)
+      field:
+        title: Titel
+        online: Online
+        type: Type
+        url: Url
+        new_window: Nieuw scherm
+  form:
+    parent: Bovenliggend menu-item
+    parent_placeholder: Selecteer het bovenliggende menu-item...
+    type: Type
+    node_translation: Pagina koppelen
+    node_translation_placeholder: Selecteer een pagina om naar de verwijzen...
+    title: Titel
+    url: Url
+    new_window: Nieuw venster

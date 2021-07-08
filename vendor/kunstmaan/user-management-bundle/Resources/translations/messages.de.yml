@@ -1,0 +1,80 @@
+---
+settings:
+  groups: Gruppen
+  group:
+    name: Name
+    edit: Gruppe Bearbeiten
+    add: Gruppe Erstellen
+    roles: Rollen
+    roles_placeholder: Rollen auswählen...
+  users: Benutzer
+  user:
+    username: Benutzername
+    password: Passwort
+    repeatedpassword: Passwort Wiederholung
+    adminlang: Sprache der Admin-Oberfläche
+    email: E-Mail
+    enabled: Aktiv
+    roles: Gruppen
+    roles_placeholder: Berechtigungsgruppen auswählen...
+    add: Benutzer Erstellen
+    edit: Benutzer Bearbeiten
+  roles: Rollen
+  role:
+    role: Rolle
+    add: Rolle Erstellen
+    edit: Rolle Bearbeiten
+kuma_user:
+  roles:
+    add:
+      flash:
+        'success.%role%': Die Rolle "%role%" wurde erstellt!
+    edit:
+      flash:
+        'success.%role%': Die Rolle "%role%" wurde aktualisiert!
+    delete:
+      flash:
+        'success.%role%': Die Rolle "%role%" wurde gelöscht!
+  users:
+    adminlist:
+      header:
+        username: Benutzername
+        email: E-Mail
+        enabled: Aktiv
+        last_login: Letzte Anmeldung
+        groups: Gruppen
+      filter:
+        username: Benutzername
+        email: E-Mail
+        enabled: Aktiv
+    add:
+      flash:
+        'success.%username%': Der Benutzer "%username%" wurde erstellt!
+    edit:
+      flash:
+        'success.%username%': Der Benutzer "%username%" wurde aktualisiert!
+    delete:
+      flash:
+        'success.%username%': Der Benutzer "%username%" wurde gelöscht!
+  group:
+    adminlist:
+      header:
+        name: Name
+        roles: Rollen
+      filter:
+        name: Name
+    add:
+      flash:
+        success: Die Gruppe "%groupname%" wurde erstellt!
+    edit:
+      flash:
+        success: Die Gruppe "%groupname%" wurde aktualisiert!
+    delete:
+      flash:
+        success: Die Gruppe "%groupname%" wurde gelöscht!
+  role:
+    adminlist:
+      header:
+        role: Rolle
+      filter:
+        role: Rolle

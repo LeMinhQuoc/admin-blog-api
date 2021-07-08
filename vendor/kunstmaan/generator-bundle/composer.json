@@ -1,0 +1,41 @@
+{
+    "name": "kunstmaan/generator-bundle",
+    "type": "symfony-bundle",
+    "description": "If you're like us, you like to build applications without having to do the same things over and over again and dislike copy/pasting code and change a couple of words every time you need feature X. The KunstmaanGeneratorBundle gives you the possibility to generate code for new bundles, adminlists and can even make you a basic default website. That way you don't have to wait too long before you see some results and you have more time to do other things. Easy no?",
+    "keywords": [ "kunstmaan", "cms", "generator"],
+    "homepage": "https://github.com/Kunstmaan/KunstmaanGeneratorBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kunstmaan Team",
+            "homepage": "http://www.kunstmaan.be/",
+            "email": "support@kunstmaan.be"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2",
+        "fzaninotto/faker": "~1.6",
+        "kunstmaan/adminlist-bundle": "~5.2",
+        "kunstmaan/article-bundle": "~5.2",
+        "kunstmaan/form-bundle": "~5.2",
+        "kunstmaan/media-bundle": "~5.2",
+        "kunstmaan/media-pagepart-bundle": "~5.2",
+        "kunstmaan/pagepart-bundle": "~5.2",
+        "kunstmaan/sensio-generator-bundle": "^3.2"
+    },
+    "require-dev": {
+        "matthiasnoback/symfony-config-test": "^4.0",
+        "matthiasnoback/symfony-dependency-injection-test": "^4.1",
+        "symfony/phpunit-bridge": "^5.1",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": { "Kunstmaan\\GeneratorBundle\\": "" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "5.8-dev"
+        }
+    }
+}

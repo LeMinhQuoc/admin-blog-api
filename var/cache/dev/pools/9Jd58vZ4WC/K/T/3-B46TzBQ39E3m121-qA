@@ -1,0 +1,22 @@
+<?php //Kunstmaan%255CAdminBundle%255CController%255CExceptionController%2523toggleResolveAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/toggle_resolve/{id}',
+            ],
+            'name' => [
+                'kunstmaanadminbundle_admin_exception_toggle_resolve',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];

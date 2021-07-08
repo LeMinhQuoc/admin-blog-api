@@ -1,0 +1,50 @@
+---
+pagepart:
+  header:
+    type: 'Überschriftstil'
+    title: 'Titel'
+  link:
+    internal: Intern
+    external: Extern
+    email: E-Mail
+    choose: 'Link Auswählen'
+    openinnewwindow: 'In neuem Fenster öffnen'
+    text: 'Text'
+  html:
+    content: 'Inhalt'
+  text:
+    content: 'Inhalt'
+  buttons:
+    move_up: Nach oben
+    move_down: Nach unten
+    edit: Bearbeiten
+    delete: Löschen
+    resize: Maximieren/minimieren
+region:
+  button:
+    min: Minimieren
+    max: Maximieren
+kuma_pagepart:
+  tab:
+    content:
+      title: Inhalt
+  modal:
+    delete:
+      'title.%type%': "Seitenteil \"%type%\" löschen"
+      'text.%type%': Dies entfernt den Seitenteil nicht vollständig. Speichern Sie die Seite um den Seitenteil dauerhaft zu entfernen.
+      button:
+        delete: Löschen
+        cancel: Abrechen
+  select:
+    add: Seitenteil hinzufügen
+  template:
+    modal:
+      change:
+        current: Aktuell
+        title: Vorlage ändern
+        button:
+          open: Vorlage ändern
+          change: Ändern
+          cancel: Abbrechen
+        message:
+          'no_admin_found.%name%': KEIN ADMIN GEFUNDEN für %name%

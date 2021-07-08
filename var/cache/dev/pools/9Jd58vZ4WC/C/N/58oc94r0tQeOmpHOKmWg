@@ -1,0 +1,3 @@
+<?php //Kunstmaan%255CAdminBundle%255CEntity%255CBaseUser%2523isPasswordChanged
+
+return [PHP_INT_MAX, []];

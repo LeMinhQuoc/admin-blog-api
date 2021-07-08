@@ -1,0 +1,40 @@
+<?php //Kunstmaan%255CPagePartBundle%255CEntity%255CPagePartRef
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Index'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Index')),
+        clone ($p['Doctrine\\ORM\\Mapping\\HasLifecycleCallbacks'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\HasLifecycleCallbacks')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'repositoryClass' => [
+                'Kunstmaan\\PagePartBundle\\Repository\\PagePartRefRepository',
+            ],
+            'name' => [
+                1 => 'kuma_page_part_refs',
+                'idx_page_part_search',
+            ],
+            'indexes' => [
+                1 => [
+                    $o[2],
+                ],
+            ],
+            'columns' => [
+                2 => [
+                    'pageId',
+                    'pageEntityname',
+                    'context',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[3],
+    ],
+    []
+); }];

@@ -1,0 +1,68 @@
+parameters:
+    kunstmaan_search.search_provider: 'Elastica'
+    kunstmaan_search.search_configuration_chain.class: Kunstmaan\SearchBundle\Configuration\SearchConfigurationChain
+    kunstmaan_search.search_provider_chain.class: Kunstmaan\SearchBundle\Provider\SearchProviderChain
+    kunstmaan_search.search.class: Kunstmaan\SearchBundle\Search\Search
+    kunstmaan_search.search_provider.elastica.class: Kunstmaan\SearchBundle\Provider\ElasticaProvider
+    kunstmaan_search.search.factory.analysis.class: Kunstmaan\SearchBundle\Search\LanguageAnalysisFactory
+    # Default analysis factory provides language aware analyzers. if you need nGram analyzers you
+    # can use the provided nGramAnalysisFactory by overriding the following parameter.
+    #kunstmaan_search.search.factory.analysis.class: Kunstmaan\SearchBundle\Search\NGramAnalysisFactory
+    # Ofcourse you can also provide your own implementation as long as it implements the
+    # AnalysisFactoryInterface. More information can be found in the
+    # documentation of this SearchBundle
+
+services:
+    kunstmaan_search.search:
+        class: '%kunstmaan_search.search.class%'
+        arguments: ['@kunstmaan_search.search_provider_chain', '%kunstmaan_search.index_prefix%', '%kunstmaan_search.search_provider%']
+
+    kunstmaan_search.search.factory.analysis:
+        class: '%kunstmaan_search.search.factory.analysis.class%'
+        public: true
+
+    # Providers
+    kunstmaan_search.search_provider_chain:
+        class: '%kunstmaan_search.search_provider_chain.class%'
+
+    kunstmaan_search.search_provider.elastica:
+        class: '%kunstmaan_search.search_provider.elastica.class%'
+        calls:
+            - [ addNode, ['%kunstmaan_search.hostname%', '%kunstmaan_search.port%', '%kunstmaan_search.username%', '%kunstmaan_search.password%'] ]
+        tags:
+            - { name: kunstmaan_search.search_provider, alias: Elastica }
+
+    # Configurations
+    kunstmaan_search.search_configuration_chain:
+        class: '%kunstmaan_search.search_configuration_chain.class%'
+
+    kunstmaan_search.command.setup:
+        class: Kunstmaan\SearchBundle\Command\SetupIndexCommand
+        arguments:
+            - '@kunstmaan_search.search_configuration_chain'
+        calls:
+            - [setContainer, ['@service_container'] ]
+        tags:
+            - { name: console.command }
+
+    kunstmaan_search.command.delete:
+        class: Kunstmaan\SearchBundle\Command\DeleteIndexCommand
+        arguments:
+            - '@kunstmaan_search.search_configuration_chain'
+        calls:
+            - [setContainer, ['@service_container'] ]
+        tags:
+            - { name: console.command }
+
+    kunstmaan_search.command.populate:
+        class: Kunstmaan\SearchBundle\Command\PopulateIndexCommand
+        arguments:
+            - '@kunstmaan_search.search_configuration_chain'
+        calls:
+            - [setContainer, ['@service_container'] ]
+        tags:
+            - { name: console.command }
+
+    Twig\Extensions\TextExtension:
+        tags:
+            - { name: twig.extension }

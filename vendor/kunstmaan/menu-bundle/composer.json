@@ -1,0 +1,38 @@
+{
+  "name": "kunstmaan/menu-bundle",
+  "type": "symfony-bundle",
+  "description": "This bundle makes it possible to manage multiple menus via the administrator interface.",
+  "keywords": [
+    "kunstmaan",
+    "menu",
+    "navigation"
+  ],
+  "homepage": "https://github.com/Kunstmaan/KunstmaanMenuBundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kunstmaan Team",
+      "homepage": "http://www.kunstmaan.be/",
+      "email": "support@kunstmaan.be"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.2",
+    "kunstmaan/adminlist-bundle": "~5.2"
+  },
+  "require-dev": {
+    "matthiasnoback/symfony-config-test": "^4.0",
+    "matthiasnoback/symfony-dependency-injection-test": "^4.1",
+    "symfony/phpunit-bridge": "^5.1",
+    "phpunit/phpunit": "^8.5"
+  },
+  "autoload": {
+    "psr-4": { "Kunstmaan\\MenuBundle\\": "" }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "5.8-dev"
+    }
+  }
+}

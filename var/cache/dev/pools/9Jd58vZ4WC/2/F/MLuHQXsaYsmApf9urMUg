@@ -1,0 +1,33 @@
+<?php //App%255CController%255CUserAdminListController%2523exportAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/export.{_format}',
+            ],
+            'name' => [
+                'app_admin_user_export',
+            ],
+            'requirements' => [
+                [
+                    '_format' => 'csv|ods|xlsx',
+                ],
+            ],
+            'methods' => [
+                [
+                    'GET',
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];

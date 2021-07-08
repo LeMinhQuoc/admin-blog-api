@@ -1,0 +1,1 @@
+[2021-07-07 13:34:36] kunstmaan.INFO: admin successfully logged in to the cms [] {"user":{"username":"admin","roles":{"0":"ROLE_SUPER_ADMIN","1":"ROLE_PERMISSIONMANAGER","2":"ROLE_ADMIN","4":"ROLE_USER"},"is_account_non_expired":true,"is_account_non_locked":true,"is_credentials_non_expired":true,"is_enabled":true}}

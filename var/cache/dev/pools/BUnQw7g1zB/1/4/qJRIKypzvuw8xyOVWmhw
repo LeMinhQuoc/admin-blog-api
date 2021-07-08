@@ -1,0 +1,3 @@
+<?php //Kunstmaan%255CNodeBundle%255CEntity%255CNodeVersion%2523getDefaultAdminType
+
+return [PHP_INT_MAX, []];

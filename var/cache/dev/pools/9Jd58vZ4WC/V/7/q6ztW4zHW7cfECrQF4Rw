@@ -1,0 +1,3 @@
+<?php //Kunstmaan%255CArticleBundle%255CEntity%255CAbstractCategory
+
+return [PHP_INT_MAX, []];
