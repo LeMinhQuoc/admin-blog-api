@@ -145,7 +145,7 @@ class __TwigTemplate_703bfaa33dfddea5ca7e50e1a7bcfc994eb763558d91cc4c89e93529da7
         echo "    <!-- JS -->
     ";
         // line 18
-        $this->loadTemplate("@KunstmaanDashboard/Dashboard/index.html.twig", "@KunstmaanDashboard/Dashboard/index.html.twig", 18, "1404580686")->display($context);
+        $this->loadTemplate("@KunstmaanDashboard/Dashboard/index.html.twig", "@KunstmaanDashboard/Dashboard/index.html.twig", 18, "2077626055")->display($context);
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -201,7 +201,7 @@ class __TwigTemplate_703bfaa33dfddea5ca7e50e1a7bcfc994eb763558d91cc4c89e93529da7
 
 
 /* @KunstmaanDashboard/Dashboard/index.html.twig */
-class __TwigTemplate_703bfaa33dfddea5ca7e50e1a7bcfc994eb763558d91cc4c89e93529da7d1fbc___1404580686 extends \Twig\Template
+class __TwigTemplate_703bfaa33dfddea5ca7e50e1a7bcfc994eb763558d91cc4c89e93529da7d1fbc___2077626055 extends \Twig\Template
 {
     private $source;
     private $macros = [];
