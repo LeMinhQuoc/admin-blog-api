@@ -1,5 +1,0 @@
-services:
-    Kunstmaan\UtilitiesBundle\Command\CipherCommand:
-        arguments: ['@kunstmaan_utilities.cipher']
-        tags:
-            - { name: console.command }
