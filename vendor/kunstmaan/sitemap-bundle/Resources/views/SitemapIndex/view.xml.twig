@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for locale in locales %}
-		<sitemap>
-			<loc>{{ url('KunstmaanSitemapBundle_sitemap', {'locale': locale, '_format': 'xml'}) }}</loc>
-		</sitemap>
-    {% endfor %}
-</sitemapindex>

@@ -1,3 +1,0 @@
-parameters:
-    google.analytics.account_id: ''
-    robots_default: "User-agent: *"

@@ -1,5 +1,0 @@
-services:
-    kunstmaan_sitemapbundle.sitemap.twig.extension:
-        class: Kunstmaan\SitemapBundle\Twig\SitemapTwigExtension
-        tags:
-            - { name: twig.extension }

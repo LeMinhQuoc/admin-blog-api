@@ -1,3 +1,0 @@
-{% if frontendform is defined %}
-    {{ form_widget(frontendform['formwidget_'~resource.uniqueId], { 'attr' : {'bound' : frontendformobject.submitted } }) }}
-{% endif %}

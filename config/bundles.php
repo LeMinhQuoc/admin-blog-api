@@ -31,8 +31,6 @@ return [
     Kunstmaan\TranslatorBundle\KunstmaanTranslatorBundle::class => ['all' => true],
     Kunstmaan\UserManagementBundle\KunstmaanUserManagementBundle::class => ['all' => true],
     Kunstmaan\MenuBundle\KunstmaanMenuBundle::class => ['all' => true],
-    Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true, 'test' => true],
-    Kunstmaan\FixturesBundle\KunstmaanFixturesBundle::class => ['dev' => true, 'test' => true],
     Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle::class => ['dev' => true, 'test' => true],
     Kunstmaan\MediaPagePartBundle\KunstmaanMediaPagePartBundle::class => ['all' => true],
     Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle::class => ['all' => true],
