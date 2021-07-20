@@ -10,7 +10,7 @@ return [
     Kunstmaan\UtilitiesBundle\KunstmaanUtilitiesBundle::class => ['all' => true],
     Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle::class => ['all' => true],
     Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle::class => ['all' => true],
-    Kunstmaan\AdminBundle\KunstmaanAdminBundle::class => ['all' => true],
+    Kunstmaan\AdminBundle\KunstmaanAdminBundle::class => ['all' => true]
     Kunstmaan\AdminListBundle\KunstmaanAdminListBundle::class => ['all' => true],
     Kunstmaan\NodeBundle\KunstmaanNodeBundle::class => ['all' => true],
     Knp\Bundle\MenuBundle\KnpMenuBundle::class => ['all' => true],
@@ -31,7 +31,7 @@ return [
     Kunstmaan\TranslatorBundle\KunstmaanTranslatorBundle::class => ['all' => true],
     Kunstmaan\UserManagementBundle\KunstmaanUserManagementBundle::class => ['all' => true],
     Kunstmaan\MenuBundle\KunstmaanMenuBundle::class => ['all' => true],
-    Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true, 'test' => true],
+//    Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true, 'test' => true],
     Kunstmaan\FixturesBundle\KunstmaanFixturesBundle::class => ['dev' => true, 'test' => true],
     Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle::class => ['dev' => true, 'test' => true],
     Kunstmaan\MediaPagePartBundle\KunstmaanMediaPagePartBundle::class => ['all' => true],
