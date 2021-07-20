@@ -1,0 +1,3 @@
+<?php //Kunstmaan%255CAdminListBundle%255CController%255CEntityLockCheckController
+
+return [PHP_INT_MAX, []];
