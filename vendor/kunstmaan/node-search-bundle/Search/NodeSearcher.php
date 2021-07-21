@@ -74,7 +74,6 @@ class NodeSearcher extends AbstractElasticaSearcher
     {
         $query = Util::escapeTerm($query);
 
-
         $elasticaQueryString = new Match();
         $elasticaQueryString
             ->setFieldMinimumShouldMatch('content', '80%')
